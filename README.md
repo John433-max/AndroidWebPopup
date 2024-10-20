@@ -19,6 +19,14 @@ An Android app that pops up a website every hour.
 
 Once the app is installed and running, it will automatically schedule a popup to appear every hour, displaying the configured website.
 
+## Building a Signed APK
+
+To build a signed APK:
+
+1. Update the signing configuration in `app/build.gradle` with your keystore information
+2. Run `./gradlew assembleRelease`
+3. The signed APK will be generated at `app/build/outputs/apk/release/app-release.apk`
+
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
